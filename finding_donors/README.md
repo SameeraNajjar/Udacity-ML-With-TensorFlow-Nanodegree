@@ -51,8 +51,9 @@ Ensure the following libraries are installed:
 - `jupyter notebook`
 
 To install dependencies, run:
-```bash
-      pip install pandas numpy scikit-learn matplotlib seaborn 
+
+```bash pip install pandas numpy scikit-learn matplotlib seaborn`
+
 
 ## Running the Project
 
@@ -80,3 +81,4 @@ To install dependencies, run:
 
 ## Conclusion
 This project demonstrates the application of supervised learning techniques to a real-world classification problem. By selecting and optimizing models, the project achieves improved predictive accuracy, making it a valuable tool for identifying potential donors.
+
