@@ -52,7 +52,9 @@ Ensure the following libraries are installed:
 
 To install dependencies, run:
 
-```bash pip install pandas numpy scikit-learn matplotlib seaborn`
+```bash 
+pip install pandas numpy scikit-learn matplotlib seaborn
+```
 
 
 ## Running the Project
