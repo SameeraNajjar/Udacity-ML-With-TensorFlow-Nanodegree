@@ -52,32 +52,31 @@ Ensure the following libraries are installed:
 
 To install dependencies, run:
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn
+      pip install pandas numpy scikit-learn matplotlib seaborn 
 
 ## Running the Project
 
-    Data Preparation
-        Load the Census dataset.
-        Perform one-hot encoding and data preprocessing.
-        Split the data into training and testing sets.
+1. **Data Preparation**
+   - Load the census dataset.
+   - Perform one-hot encoding and data preprocessing.
+   - Split the dataset into training and testing sets.
 
-    Model Training and Evaluation
-        Train the models and evaluate their performance.
-        Compare results using metrics like accuracy, precision, recall, and F1 score.
+2. **Model Training and Evaluation**
+   - Train the supervised learning models and evaluate their performance.
+   - Compare results using accuracy, precision, recall, and F1 score.
 
-    Model Optimization
-        Perform grid search optimization on the selected model.
-        Evaluate the optimized model’s performance.
+3. **Model Optimization**
+   - Perform grid search optimization on the chosen model.
+   - Evaluate the performance of the optimized model.
 
-    Feature Importance
-        Analyze feature importance from the chosen model.
-        Experiment with a reduced feature set and observe any impact on model performance.
+4. **Feature Importance**
+   - Analyze and compare the importance of features used by the model.
+   - Experiment with reducing the feature set and assess the impact on model performance.
 
-Results
+## Results
 
-    The final optimized model shows substantial improvements over the naive predictor.
-    Feature importance analysis reveals the most influential variables in income prediction.
+- The final optimized model demonstrates significantly improved performance compared to the naive predictor.
+- Feature importance analysis shows which variables have the greatest impact on income prediction.
 
-Conclusion
-
-This project applies supervised learning techniques to a practical classification task. By selecting and optimizing models, it achieves better predictive accuracy, making it an effective tool for identifying potential donors for CharityML.
+## Conclusion
+This project demonstrates the application of supervised learning techniques to a real-world classification problem. By selecting and optimizing models, the project achieves improved predictive accuracy, making it a valuable tool for identifying potential donors.
