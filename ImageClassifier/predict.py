@@ -13,7 +13,6 @@ def preprocess_image(img_path, target_size=(224, 224)):
     img_array = tf.image.resize(img_array, target_size) / 255.0
     return img_array
 
-
 def process_image(img, image_size=224):
     image = np.squeeze(img)
     image = tf.image.resize(image, (image_size, image_size)) / 255.0
@@ -46,16 +45,15 @@ def main():
         base_model = hub.KerasLayer(args.model_path, trainable=False)
         model = tf.keras.Sequential([
             base_model,
-            tf.keras.layers.Dense(32,activation= 'relu'),
+            tf.keras.layers.Dense(32, activation='relu'),
             tf.keras.layers.Dense(102, activation='softmax')
         ])
         model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
     with open(args.category_names, 'r') as f:
         class_names = json.load(f)
-        classes = {int(i): class_names[str(i)] for i in classes}
 
-    top_values, top_classes = predict(args.image_path, model, args.top_k, classes)
+    top_values, top_classes = predict(args.image_path, model, args.top_k, class_names)
 
     print("These are the top probabilities:", top_values)
     print("Of these top classes:", top_classes)
